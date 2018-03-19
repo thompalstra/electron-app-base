@@ -1,0 +1,50 @@
+x-menu {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+x-menu-item {
+  -webkit-app-region: no-drag;
+}
+
+html, body{
+    margin: 0;
+}
+
+x-menu{
+    display: table;
+    height: 25px;
+    width: 100%;
+}
+x-menu-item{
+    width: 25px;
+    text-align: center;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 24px;
+}
+x-menu-title{
+    font-size: 16px;
+}
+
+x-menu-item,
+x-menu-title{
+    display: table-cell;
+    vertical-align: middle;
+    height: 25px;
+
+    padding: 0 10px;
+}
+x-menu-item:hover{
+    color: white;
+    background-color: #111;
+}
+x-menu-item[role="close"]:hover{
+    color: white;
+    background-color: red;
+}
+
+x-menu{
+    background-color: #333;
+    color: white;
+}
